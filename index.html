@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>FlashLife</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <script>if (typeof module==='object'){window.module==module; module=undefined;}</script> <script src="js/jquery.js"></script> <script src="js/app.js"></script> <script>if (window.module) module=window.module;</script>
+   </head>
+   <body>
+      <div class="windowSettings">
+         <a style="cursor: pointer; -webkit-user-select: none; -webkit-app-region: drag;"><i class="fa-light fa-arrows-maximize"></i></a>
+          <a id="maximize"><i class="fal fa-window-maximize"></i></a>
+           <a id="closeBtn" class="close"><i class="fal fa-xmark"></i></a></div>
+      <div class="left">
+         <div class="logo"></div>
+         <hr>
+         <ul>
+            <label>FiveM</label> 
+            <li id="btn_start"><i class="fa-duotone fa-gamepad-modern"></i> <span>Spiel starten</span></li>
+            <li id="clearcache"><i class="fa-duotone fa-file-slash"></i> <span>Cache leeren</span> <i id="chachecheck" class="fas fa-check-circle text-success cachecheck" style="font-size: 16px;position: relative; top: 6px; left: 20px;"></i></li>
+            <label>Hilfreich</label> 
+            <li id="shopBtn"><i class="fa-duotone fa-shopping-basket"></i> <span>Shop</span></li>
+            <li id="ucpBtn"><i class="fa-duotone fa-user-cog"></i> <span>User Control Panel</span></li>
+            <li id="rulebtn"><i class="fa-duotone fa-gavel"></i> <span>Regelwerk</span></li>
+            <!--<label>Soziale Netzwerke</label> <li id="discordBtn"><i class="fa-brands fa-discord"></i> <span>Discord</span></li>--> 
+         </ul>
+         <footer> FlashLife Launcher v1.0.13 </footer>
+      </div>
+      <div class="right">
+         <div class="row" style="margin: 80px 50px;">
+            <div class="col-8" style="text-shadow: 1px 1px 3px rgb(0 0 0 / 50%);">
+               <h4 class="head-text text-light">Willkommen zurück!</h4>
+               <p class="text-light">Derzeit sind <b id="onlinecounter">0</b> Spieler online.</p>
+            </div>
+            <div class="col-4">
+               <h4 class="head-text text-light" style="text-shadow: 1px 1px 3px rgb(0 0 0 / 50%);">Server Status</h4>
+               <p class="text-light status-text"><i class="fa-solid fa-circle-small text-warning" id="statusicon"></i> <span id="onlinetext">Online</span></p>
+            </div>
+            <div id="alert-box" class="alert"> <span id="alert">Systeme werden abgerufen..</span> </div>
+         </div>
+      </div>
+      <script src="js/all.min.js"></script><script src="js/bootstrap.bundle.min.js"></script><script src="js/renderer.js"></script>
+   </body>
+</html>
